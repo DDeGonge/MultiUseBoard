@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:20021121-00010C4LF J?
+U 1 1 616E1DDC
+P 2400 3250
+F 0 "J?" H 2850 3515 50  0000 C CNN
+F 1 "20021121-00010C4LF" H 2850 3424 50  0000 C CNN
+F 2 "2002112100010C4LF" H 3150 3350 50  0001 L CNN
+F 3 "" H 3150 3250 50  0001 L CNN
+F 4 "Headers & Wire Housings 1.27x1.27mm BTB, Hdr Unshrd, SMT, 10 Pos" H 3150 3150 50  0001 L CNN "Description"
+F 5 "4.55" H 3150 3050 50  0001 L CNN "Height"
+F 6 "649-202112100010C4LF" H 3150 2950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/20021121-00010C4LF?qs=iIVTEDlrHA1ddfCJGH4Nhg%3D%3D" H 3150 2850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amphenol" H 3150 2750 50  0001 L CNN "Manufacturer_Name"
+F 9 "20021121-00010C4LF" H 3150 2650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 616E41A4
+P 2200 3050
+F 0 "#PWR?" H 2200 2900 50  0001 C CNN
+F 1 "+3V3" H 2215 3223 50  0000 C CNN
+F 2 "" H 2200 3050 50  0001 C CNN
+F 3 "" H 2200 3050 50  0001 C CNN
+	1    2200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616E4BBB
+P 3550 3450
+F 0 "#PWR?" H 3550 3200 50  0001 C CNN
+F 1 "GND" H 3555 3277 50  0000 C CNN
+F 2 "" H 3550 3450 50  0001 C CNN
+F 3 "" H 3550 3450 50  0001 C CNN
+	1    3550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3350 3550 3350
+Wire Wire Line
+	3550 3350 3550 3450
+Wire Wire Line
+	3300 3250 3550 3250
+Wire Wire Line
+	3550 3250 3550 3350
+Connection ~ 3550 3350
+Wire Wire Line
+	2200 3050 2200 3250
+Wire Wire Line
+	2200 3250 2400 3250
+NoConn ~ 2400 3650
+NoConn ~ 3300 3650
+NoConn ~ 3300 3550
+NoConn ~ 3300 3450
+Text Label 2300 3350 2    50   ~ 0
+SWDIO
+Text Label 2300 3450 2    50   ~ 0
+SWCLK
+Text Label 2300 3550 2    50   ~ 0
+RESET
+Wire Wire Line
+	2300 3350 2400 3350
+Wire Wire Line
+	2400 3450 2300 3450
+Wire Wire Line
+	2300 3550 2400 3550
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 616E9A24
+P 5650 3450
+F 0 "J?" H 5730 3492 50  0000 L CNN
+F 1 "Conn_01x05" H 5730 3401 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Horizontal" H 5650 3450 50  0001 C CNN
+F 3 "~" H 5650 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 616EA9E6
+P 4950 3200
+F 0 "#PWR?" H 4950 3050 50  0001 C CNN
+F 1 "+3V3" H 4965 3373 50  0000 C CNN
+F 2 "" H 4950 3200 50  0001 C CNN
+F 3 "" H 4950 3200 50  0001 C CNN
+	1    4950 3200
+	1    0    0    -1  
+$EndComp
+Text Label 5450 3450 2    50   ~ 0
+SWDIO
+Text Label 5450 3550 2    50   ~ 0
+SWCLK
+Text Label 5450 3650 2    50   ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 616EAFDF
+P 4950 3350
+F 0 "#PWR?" H 4950 3100 50  0001 C CNN
+F 1 "GND" H 4955 3177 50  0000 C CNN
+F 2 "" H 4950 3350 50  0001 C CNN
+F 3 "" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3200 4950 3250
+Wire Wire Line
+	4950 3250 5450 3250
+Wire Wire Line
+	5450 3350 4950 3350
+$EndSCHEMATC

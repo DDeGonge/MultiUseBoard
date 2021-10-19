@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 105017-0001
+#
+DEF 105017-0001 J 0 40 Y Y 1 L N
+F0 "J" -290 220 50 H V L BNN
+F1 "105017-0001" -300 -300 50 H V L BNN
+F2 "MOLEX_105017-0001" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+S -300 -200 300 200 0 0 10 f
+X D+ 3 -500 100 200 R 40 40 0 0 B 
+X D- 2 -500 0 200 R 40 40 0 0 B 
+X ID 4 -500 -100 200 R 40 40 0 0 P 
+X GND 5 500 -100 200 L 40 40 0 0 W 
+X VDD 1 500 100 200 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
