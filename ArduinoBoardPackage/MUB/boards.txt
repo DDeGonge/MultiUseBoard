@@ -1,0 +1,85 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+# MUB V1 (SAMD51)
+# ------------------------------
+mub_v1.name=MUB V1 (SAMD51)
+mub_v1.vid.0=0x239A
+mub_v1.pid.0=0x8022
+mub_v1.vid.1=0x239A
+mub_v1.pid.1=0x0022
+mub_v1.upload.tool=bossac18
+mub_v1.upload.protocol=sam-ba
+mub_v1.upload.maximum_size=507904
+mub_v1.upload.offset=0x4000
+mub_v1.upload.use_1200bps_touch=true
+mub_v1.upload.wait_for_upload_port=true
+mub_v1.upload.native_usb=true
+mub_v1.build.mcu=cortex-m4
+#mub_v1.build.f_cpu=120000000L
+mub_v1.build.usb_product="Adafruit Feather M4"
+mub_v1.build.usb_manufacturer="Adafruit LLC"
+mub_v1.build.board=MUB_V1
+mub_v1.build.core=arduino
+mub_v1.build.extra_flags=-D__SAMD51J19A__ -DADAFRUIT_FEATHER_M4_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mub_v1.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+mub_v1.build.openocdscript=openocd_scripts/arduino_zero.cfg
+mub_v1.build.variant=mub_v1
+mub_v1.build.variant_system_lib=
+mub_v1.build.vid=0x239A
+mub_v1.build.pid=0x8022
+mub_v1.bootloader.tool=openocd
+mub_v1.bootloader.file=mub_v1/bootloader-feather_m4-v3.13.0.bin
+mub_v1.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16 
+mub_v1.menu.cache.on=Enabled
+mub_v1.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+mub_v1.menu.cache.off=Disabled
+mub_v1.menu.cache.off.build.cache_flags=
+mub_v1.menu.speed.120=120 MHz (standard)
+mub_v1.menu.speed.120.build.f_cpu=120000000L
+mub_v1.menu.speed.150=150 MHz (overclock)
+mub_v1.menu.speed.150.build.f_cpu=150000000L
+mub_v1.menu.speed.180=180 MHz (overclock)
+mub_v1.menu.speed.180.build.f_cpu=180000000L
+mub_v1.menu.speed.200=200 MHz (overclock)
+mub_v1.menu.speed.200.build.f_cpu=200000000L
+mub_v1.menu.opt.small=Small (-Os) (standard)
+mub_v1.menu.opt.small.build.flags.optimize=-Os
+mub_v1.menu.opt.fast=Fast (-O2)
+mub_v1.menu.opt.fast.build.flags.optimize=-O2
+mub_v1.menu.opt.faster=Faster (-O3)
+mub_v1.menu.opt.faster.build.flags.optimize=-O3
+mub_v1.menu.opt.fastest=Fastest (-Ofast)
+mub_v1.menu.opt.fastest.build.flags.optimize=-Ofast
+mub_v1.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+mub_v1.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+mub_v1.menu.maxqspi.50=50 MHz (standard)
+mub_v1.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+mub_v1.menu.maxqspi.fcpu=CPU Speed / 2
+mub_v1.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+mub_v1.menu.usbstack.arduino=Arduino
+mub_v1.menu.usbstack.tinyusb=TinyUSB
+mub_v1.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+mub_v1.menu.debug.off=Off
+mub_v1.menu.debug.on=On
+mub_v1.menu.debug.on.build.flags.debug=-g
