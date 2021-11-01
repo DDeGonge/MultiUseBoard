@@ -4,7 +4,7 @@
     {
       "name": "mub",
       "maintainer": "Andrew DeGonge - 3DprintedLife",
-      "websiteURL": "https://github.com/DDeGonge/OSR-Control-Board",
+      "websiteURL": "https://github.com/DDeGonge/MultiUseBoard",
       "email" : "3dprintedlife@gmail.com",
       "platforms":
       [
@@ -15,7 +15,7 @@
           "category": "Contributed",
           "url": "https://github.com/DDeGonge/MultiUseBoard/blob/main/ArduinoBoardPackage/MUB-1.0.1.zip",
           "archiveFileName": "MUB-1.0.1.zip",
-          "checksum": "MD5:371a0ee9d8acee16589342df20296879",
+          "checksum": "sha-256:44dfbab5e1ae22e457de8fce5e77dcd3e1780374df8ba7e3eafe6ac2661fc5f6",
           "size": "1522228",
           "boards": [
             {
