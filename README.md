@@ -16,7 +16,11 @@ Well, a few reasons...
 
 ## Cool, I want one!
 Great! Then build it yourself :) I hope to sell these boards once the global chip shortage resolves itself, but for now you are on your own!
-The gerber files are found in this repo
+
+The gerber files to order the board are found in this repo. Order at your own risk.
+
 A probably up-to-date BOM can be found [here](https://octopart.com/bom-tool/H8oUqADt)
+
 A custom package for kicad exists in the libraries folder, so you can easily integrate the mounting footprint into your own board and simply connect a MUB in the slot.
+
 Godspeed.
