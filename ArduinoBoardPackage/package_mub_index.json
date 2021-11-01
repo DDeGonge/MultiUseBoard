@@ -13,7 +13,7 @@
           "architecture": "samd",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "",
+          "url": "https://raw.githubusercontent.com/DDeGonge/MultiUseBoard/main/ArduinoBoardPackage/package_mub_index.json",
           "archiveFileName": "MUB-1.0.0.zip",
           "checksum": "MD5:c6b2c23df09fcb3b72a815fb5b56c898",
           "size": "1714685",
