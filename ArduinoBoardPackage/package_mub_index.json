@@ -1,60 +1,48 @@
 {
-  "packages":
-  [
-    {
-      "name": "mub",
-      "maintainer": "Andrew DeGonge - 3DprintedLife",
-      "websiteURL": "https://github.com/DDeGonge/MultiUseBoard",
-      "email" : "3dprintedlife@gmail.com",
-      "platforms":
-      [
-        {
-          "name": "MultiUseBoard (MUB)",
-          "architecture": "samd",
-          "version": "1.0.1",
-          "category": "Contributed",
-          "url": "https://github.com/DDeGonge/MultiUseBoard/blob/main/ArduinoBoardPackage/MUB-1.0.1.zip",
-          "archiveFileName": "MUB-1.0.1.zip",
-          "checksum": "SHA-256:44dfbab5e1ae22e457de8fce5e77dcd3e1780374df8ba7e3eafe6ac2661fc5f6",
-          "size": "1522228",
-          "boards": [
-            {
-              "name": "mub_v1"
-            }
-          ],
-          "toolsDependencies":
-          [
-            {
-              "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "7-2017q4"
-            },
-            {
-              "packager": "arduino",
-              "name": "bossac",
-              "version": "1.8.0-48-gb176eee"
-            },
-            {
-              "packager": "arduino",
-              "name": "openocd",
-              "version": "0.10.0-arduino9"
-            },
-            {
-              "packager": "arduino",
-              "name": "CMSIS",
-              "version": "4.5.0"
-            },
-            {
-              "packager": "arduino",
-              "name": "CMSIS-Atmel",
-              "version": "1.2.0"
-            }
-          ]
-        }
-      ],
-      "tools":
-      [
-      ]
-    }
-  ]
+	"packages": [{
+		"name": "mub",
+		"maintainer": "Andrew DeGonge - 3DprintedLife",
+		"websiteURL": "https://github.com/DDeGonge/MultiUseBoard",
+		"email": "3dprintedlife@gmail.com",
+		"platforms": [{
+			"name": "MultiUseBoard (MUB)",
+			"architecture": "samd",
+			"version": "1.0.1",
+			"category": "Contributed",
+			"url": "https://github.com/DDeGonge/MultiUseBoard/blob/main/ArduinoBoardPackage/MUB-1.0.1.zip",
+			"archiveFileName": "MUB-1.0.1.zip",
+			"checksum": "SHA-256:44dfbab5e1ae22e457de8fce5e77dcd3e1780374df8ba7e3eafe6ac2661fc5f6",
+			"size": "1522228",
+			"boards": [{
+				"name": "mub_v1"
+			}],
+			"toolsDependencies": [{
+					"packager": "arduino",
+					"name": "arm-none-eabi-gcc",
+					"version": "7-2017q4"
+				},
+				{
+					"packager": "arduino",
+					"name": "bossac",
+					"version": "1.8.0-48-gb176eee"
+				},
+				{
+					"packager": "arduino",
+					"name": "openocd",
+					"version": "0.10.0-arduino9"
+				},
+				{
+					"packager": "arduino",
+					"name": "CMSIS",
+					"version": "4.5.0"
+				},
+				{
+					"packager": "arduino",
+					"name": "CMSIS-Atmel",
+					"version": "1.2.0"
+				}
+			]
+		}],
+		"tools": []
+	}]
 }
