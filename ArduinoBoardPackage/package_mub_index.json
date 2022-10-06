@@ -7,12 +7,12 @@
 		"platforms": [{
 			"name": "MultiUseBoard (MUB)",
 			"architecture": "samd",
-			"version": "1.0.1",
+			"version": "1.0.2",
 			"category": "Contributed",
-			"url": "https://github.com/DDeGonge/MultiUseBoard/raw/main/ArduinoBoardPackage/MUB-1.0.1.zip",
-			"archiveFileName": "MUB-1.0.1.zip",
-			"checksum": "MD5:371a0ee9d8acee16589342df20296879",
-			"size": "1522228",
+			"url": "https://github.com/DDeGonge/MultiUseBoard/raw/main/ArduinoBoardPackage/MUB-1.0.2.zip",
+			"archiveFileName": "MUB-1.0.2.zip",
+			"checksum": "MD5:60685607522f0d162cb033950f553106",
+			"size": "1522230",
 			"boards": [{
 				"name": "mub_v1"
 			}],
