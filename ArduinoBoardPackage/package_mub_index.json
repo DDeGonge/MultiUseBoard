@@ -11,7 +11,7 @@
 			"category": "Contributed",
 			"url": "https://github.com/DDeGonge/MultiUseBoard/blob/main/ArduinoBoardPackage/MUB-1.0.1.zip",
 			"archiveFileName": "MUB-1.0.1.zip",
-			"checksum": "SHA-256:44dfbab5e1ae22e457de8fce5e77dcd3e1780374df8ba7e3eafe6ac2661fc5f6",
+			"checksum": "MD5:371a0ee9d8acee16589342df20296879",
 			"size": "1522228",
 			"boards": [{
 				"name": "mub_v1"
